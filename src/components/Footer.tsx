@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
                     <div className='text-left px-3 text-sm'></div>
                 </div>
 
-                <div className='grid gap-2 text-left'>
+                {/* <div className='grid gap-2 text-left'>
                     <h3 className='font-bold text-xl'>Resources</h3>
                     <ul className='grid gap-2 text-sm'>
                         <a>Privacy Policy</a>
@@ -34,7 +34,8 @@ const Footer: React.FC = () => {
                         <a>About Us</a>
                         <a>Contact Us</a>
                     </ul>
-                </div>
+                </div> */}
+                
                 <div className='grid gap-2 text-left'>
                     <h3 className='font-bold text-xl'>Contact</h3>
                     <ul className='flex gap-2 text-sm'>
@@ -57,7 +58,7 @@ const Footer: React.FC = () => {
                     <a href='https://discord.gg/6UY4k6QrBg' target='_blank'>
                         <FaDiscord />
                     </a>
-                    <a href='https://github.com/Smart-Earners-Team/clock-city' target='_blank'>
+                    <a href='https://github.com/Smart-Earners-Team/clock-city-v2' target='_blank'>
                         <FaGithub />
                     </a>
                 </div>
