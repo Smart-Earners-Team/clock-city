@@ -77,7 +77,7 @@ const Mint: React.FC = () => {
             const contract = new ethers.Contract(ClockCityCA, ClockCityABI, signer);
 
             // Call the mint function from your contract
-            const transactionResponse = await contract.mint(mintAmount, { value: ethers.parseEther("0.1"), gasLimit: 20000000 });
+            const transactionResponse = await contract.mint(mintAmount, { value: ethers.parseEther("0.1"), gasLimit: 50000000, gasPrice: ethers.parseUnits('1.1', 'gwei') });
 
             // Wait for the transaction to be mined and get the transaction receipt
             const transactionResult = await transactionResponse.wait();
