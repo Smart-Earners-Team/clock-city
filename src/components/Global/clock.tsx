@@ -1,8 +1,12 @@
 import { ethers } from 'ethers';
 
-const CA = '0x8a81348e22B60f79610f2fa6308F61e6c4d10EA0';
+// const CA = '0x8a81348e22B60f79610f2fa6308F61e6c4d10EA0';
 
-const provider = new ethers.JsonRpcProvider('https://triton.api.nautchain.xyz');
+// const provider = new ethers.JsonRpcProvider('https://triton.api.nautchain.xyz');
+
+const CA = '0xe19B28e1573A388EF247aaF03fBC96Be84E57F08';
+
+const provider = new ethers.JsonRpcProvider('https://data-seed-prebsc-2-s2.binance.org:8545');
 
 const ContractABI = [
     {

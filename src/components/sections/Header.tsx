@@ -35,8 +35,7 @@ const Header: React.FC = () => {
     const [imagePool, setPool] = useState<Array<any>>([]);
 
     const generatePool = async () => {
-
-
+        
         try {
             await updateValues();
             const promises = values.map(value => generateURI(value.tokenID, value.seed, value.holder, value.w, value.x));
