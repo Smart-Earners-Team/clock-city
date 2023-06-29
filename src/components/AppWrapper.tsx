@@ -29,15 +29,16 @@ export const tnautilus = {
   },
 } as const satisfies Chain
 
-const chains = [tnautilus]
+const chains = [ tnautilus ]
 const projectId = ''
 
 const { publicClient } = configureChains(chains, [w3mProvider({ projectId })])
 const wagmiConfig = createConfig({
   autoConnect: true,
-  connectors: w3mConnectors({ projectId, version: 1, chains }),
+  connectors: w3mConnectors({chains, version: 1, projectId: projectId}),
   publicClient
-})
+});
+
 const ethereumClient = new EthereumClient(wagmiConfig, chains)
 
 export interface GlobalTypes {
